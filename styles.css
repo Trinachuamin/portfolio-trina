@@ -232,130 +232,103 @@ section {
 }
 
 /* Home Section */
-#home {
+
+
+section{
+    min-height: 100vh;
+    padding: 5rem 9% 5rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.home{
     display: flex;
+    justify-content: center;
     align-items: center;
-    /* Center align vertically */
-    justify-content: center;
-    /* Center align horizontally */
-    padding: 80px;
+    gap: 8rem;
     background-color: #212530;
-    height: 100vh;
-    color: #333;
 }
 
-/* Content Area */
-.home-content {
-    flex: 1;
-    text-align: center;
-    max-width: 800px;
-    margin: 0 20px;
-    animation: fadeIn 1.5s ease-out;
+.home .home-content h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #ffffffcc;
 }
 
-.name {
+span{
     color: #c86682;
-    font-weight: bold;
-    /* Optional */
-    display: inline-block;
-    /* Allows transform to work correctly */
-    opacity: 0;
-    /* Start hidden */
-    transform: scale(0.8);
-    /* Start scaled down */
-    animation: fadeInScale 0.6s ease forwards;
-    /* Animation properties */
 }
 
-/* Keyframes for the animation */
-@keyframes fadeInScale {
-    to {
-        opacity: 1;
-        /* Fully visible */
-        transform: scale(1);
-        /* Original size */
-    }
+.home-content h3{
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* Animations */
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.home-content p{
+    font-size: 1.5rem;
 }
 
-@keyframes popIn {
-    0% {
-        opacity: 0;
-        transform: scale(0.9);
-    }
-
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
+.home-img{
+    border-radius: 40%;
 }
 
-/* Heading */
-h1 {
-    font-size: 55px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffffffcc;
-    text-shadow: 2px 4px 6px rgba(0, 0, 0, 0.15);
-    animation: popIn 1.5s ease-out;
+.home-img img{
+    position: relative;
+    width: 30vw;
+    border-radius: 0%;
+    cursor: pointer;
+    transition: 0.2s linear;
 }
 
-/* Paragraph */
-p {
-    font-size: 30px;
-    margin-bottom: 20px;
-    color: #ffffffcc;
-    text-shadow: 1px 3px 5px rgba(0, 0, 0, 0.1);
-    animation: fadeIn 2s ease-out;
+.home-img img:hover{
+    font-size: 1.8rem;
+    font-weight: 500;
 }
 
-/* Button */
-.btn {
-    display: inline-block;
-    padding: 12px 24px;
-    color: #ffffffcc;
-    border: 1px solid #ffffffcc;
-    border-radius: 6px;
-    text-decoration: none;
-    font-size: 16px;
-    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #64626283;
-    color: #fff;
-    transform: scale(1.15);
-}
-
-
-
-/* Image Area */
-.home-image {
-    flex: 1;
-    display: flex;
+.social-icons a{
+    display: inline-flex;
     justify-content: center;
+    align-items: center;
+    width: 3.7rem;
+    height: 3.7rem;
+    background-color: transparent;
+    border: 0.2rem solid #c86682;
+    font-size: 2rem;
+    border-radius: 50%;
+    margin: 3rem 1.5rem 3rem 0;
+    transition: 0.3s ease;
+    color: #c86682;
+    text-decoration: none;
 }
 
-.home-image img {
-    width: 100%;
-    /* Make the image fit the container */
-    max-width: 500px;
-    /* Set a max width to prevent it from getting too large */
-    height: auto;
-    /* Maintain aspect ratio */
+.social-icons a:hover{
+    color: #c86682;
+    transform: scale(1.3) translateY(-5px);
+    background-color: #ffffffcc;
+    box-shadow: 0  0 25px #ffffffcc;
 }
+
+.btn{
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background-color: #c86682;
+    border-radius: 4rem;
+    font-size: 1.6rem;
+    color: #ffffffcc;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+    border: 2px solid #ffffffcc;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.btn:hover{
+    transform: scale3d(1.03);
+    background-color: #ffffffcc;
+    color: #c86682;
+    box-shadow: 0 0 25px #c86682;
+}
+
 
 /* Portfolio Section */
 #portfolio {
