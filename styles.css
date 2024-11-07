@@ -320,6 +320,7 @@ span{
     border: 2px solid #ffffffcc;
     transition: 0.3s ease;
     cursor: pointer;
+    text-decoration: none;
 }
 
 .btn:hover{
