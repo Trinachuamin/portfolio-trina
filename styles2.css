@@ -4,6 +4,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html{
+    scroll-behavior: smooth;
+  }
 /* General Styling */
 body {
     font-family: "Bernard MT Condensed", Arial, sans-serif;
