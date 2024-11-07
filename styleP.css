@@ -1,46 +1,45 @@
-/* Reset some default browser styling */
+/* General Reset */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #212530;
 
+}
 
 /* Background styling */
 body {
-    margin: 0;
-    padding: 0;
-    height: 200vh;
-    overflow-y: scroll;
-    position: relative;
-    font-family: Georgia, serif;
-    
+  margin: 0;
+  padding: 0;
+  height: 150vh;
+  overflow-y: scroll;
+  position: relative;
 }
 
 /* Stars animation */
 .star {
-    position: absolute;
-    border-radius: 50%;
-    background-color: #ffffff;
-    opacity: 0.8;
-    animation: twinkle 2s infinite ease-in-out;
-    z-index: -2;
+  position: absolute;
+  border-radius: 50%;
+  background-color: #ffffff;
+  opacity: 0.8;
+  animation: twinkle 2s infinite ease-in-out;
+  z-index: 0;
 }
 
 /* Animation for twinkling stars */
 @keyframes twinkle {
-    0% {
-        opacity: 0.2;
-        transform: scale(0.9);
-    }
-    50% {
-        opacity: 0.8;
-        transform: scale(1);
-    }
-    100% {
-        opacity: 0.2;
-        transform: scale(0.9);
-    }
+  0% {
+      opacity: 0.2;
+      transform: scale(0.9);
+  }
+  50% {
+      opacity: 0.8;
+      transform: scale(1);
+  }
+  100% {
+      opacity: 0.2;
+      transform: scale(0.9);
+  }
 }
 
 /* Create random star positions and sizes */
@@ -145,281 +144,239 @@ body {
 .star99 { width: 3px; height: 3px; top: 45%; left: 90%; animation-duration: 3.5s; }
 .star100 { width: 2.1px; height: 2.1px; top: 70%; left: 15%; animation-duration: 2.9s; }
 
-/* General Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Body and general styling */
-body {
-    font-family: Georgia, serif;
-    background-color: #212530;
-    color: #ffffffcc;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-}
-
-/* Main layout container */
-.design-layout {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    gap: 40px;
-    padding: 50px;
-    max-width: 1000px;
-    margin: auto;
-}
-
-/* Image styling */
-.design-image img {
-    width: 400px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-}
-
-/* Content styling */
-.design-content {
-    max-width: 500px;
-}
-
-.design-title {
-    font-family: "Bodoni MT", serif;
-    font-size: 2.5em;
-    color: #c86682;
-    margin-bottom: 10px;
-}
-
-.design-subtitle {
-    font-style: italic;
-    color: #FAF3E3;
-    margin-bottom: 20px;
-}
-
-.design-content p {
-    line-height: 1.6;
-    margin-bottom: 10px;
-}
-
-/* Rationale Section Styling */
-.rationale-section {
-    margin-top: 20px;
-    padding: 15px;
-    background-color: #33394A;
-    border-radius: 8px;
-}
-
-.rationale-section h2 {
-    font-family: "Bodoni MT", serif;
-    font-size: 1.8em;
-    color: #c86682;
-    margin-bottom: 10px;
-}
-
-.rationale-section p {
-    color: #FAF3E3;
-    font-size: 1em;
-    line-height: 1.6;
-}
-
-/* View Button Styling */
-.view-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    border: none;
-    background-color: #c86682;
-    color: #FAF3E3;
-    font-family: Georgia, serif;
-    font-size: 1em;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
-}
-
-.view-button:hover {
-    background-color: #b7556f;
-}
-
 /* Navigation Bar */
 header {
-    background: transparent;
-    padding: 10px 20px;
-    text-align: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
+  background: transparent;
+  padding: 10px 20px;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .navbar .logo {
-    height: 70px;
-    width: 110px;
+  height: 70px;
+  width: 110px;
 }
 
 .navbar ul {
-    list-style: none;
-    display: flex;
-    gap: 30px;
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.navbar ul li {
+  display: flex;
 }
 
 .navbar ul li a {
-    text-decoration: none;
-    color: #ffffffcc;
-    font-family: 'Georgia', serif;
-    font-size: 18px;
-    font-weight: bold;
-    transition: color 0.3s ease, border-bottom 0.3s ease;
+  text-decoration: none;
+  color: #ffffffcc;
+  font-family: 'Georgia', serif;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar-nav {
+  display: flex;
+  gap: 30px; /* Space between nav items */
+  list-style: none;
+}
+
+.navbar-nav .nav-item {
+  display: flex;
+}
+
+.navbar-nav .nav-link {
+  text-decoration: none;
+  color: #ffffffcc; /* Text color */
+  font-family: 'Georgia', serif;
+  font-size: 20px;
+  font-weight: bold;
+  transition: color 0.3s ease, border-bottom 0.3s ease;
 }
 
 .navbar ul li a:hover {
-    color: #c86682;
-    border-bottom: 2px solid #ffffffcc;
+  color: #c86682;
+  border-bottom: 2px solid #ffffffcc;
 }
 
-/* Mood Board Section Styling */
-.mood-board-section {
-    margin-top: 40px;
-    text-align: center;
-    color: #FAF3E3;
+.navbar {
+  background-color: transparent;
+  /* Keep the navbar background transparent */
 }
 
-.mood-board-section h2 {
-    font-family: "Bodoni MT", serif;
-    font-size: 2.2em; /* Slightly larger heading */
-    color: #c86682;
-    margin-bottom: 20px;
+
+/* Projects Container Styling */
+.projects-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
-.mood-board-section .mood-board-image {
-    width: 80%;
-    max-width: 600px;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
-    margin-bottom: 15px;
+/* Card Styling */
+.card {
+  width: 300px;
+  height: 450px;
+  background: #212530;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 3px 1px #00000088;
+  cursor: pointer;
+  overflow: hidden;
+  position: relative;
+  margin: 20px;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
 }
 
-.mood-board-description {
-    font-size: 1.1em; /* Slightly larger font size for description */
-    line-height: 1.7; /* Adjusted line height for readability */
-    color: #cccccc;
-    max-width: 700px;
-    margin: auto;
-    padding: 0 20px;
+.card:hover {
+  transform: translateY(-5px); /* Lift effect on hover */
 }
 
-/* General Modal Styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed;
-    z-index: 1000;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent background */
-    justify-content: center;
-    align-items: center;
+.card .content {
+  border-radius: 10px;
+  background: #33394A;
+  width: 280px;
+  height: 430px;
+  z-index: 1;
+  padding: 20px;
+  color: #FAF3E3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /* Center content vertically */
+  text-align: center;
+  font-family: "Georgia", serif;
+  position: relative;
 }
 
-/* Show modal when targeted */
-.modal:target {
-    display: flex; /* Show the modal when targeted */
+/* Image Styling */
+.card-image {
+  width: 80%; /* Adjust size as needed */
+  height: auto;
+  border-radius: 8px;
+  transition: filter 0.3s ease; /* Smooth transition for blur effect */
+  background-color: transparent;
+  margin-bottom: 20px; /* Space below image for title and description */
 }
 
-/* Image Styling inside the Modal */
-.modal-content {
-    max-width: 80%;
-    max-height: 80%;
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+/* Blur the image on card hover */
+.card:hover .card-image {
+  filter: blur(5px); /* Adjust the blur intensity as needed */
 }
 
-/* Close Button Styling */
-.close {
-    position: absolute;
-    top: 20px;
-    right: 30px;
-    font-size: 30px;
-    color: white;
-    text-decoration: none;
-    background: none;
-    cursor: pointer;
-    transition: color 0.3s;
+/* Title and Description initially hidden */
+.card-title, .card-description {
+  opacity: 0;
+  transition: opacity 0.3s ease; /* Fade in effect */
+  position: absolute;
+  color: #FAF3E3;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  padding: 10px;
+  border-radius: 8px;
 }
 
-.close:hover {
-    color: #c86682; /* Add hover effect for the close button */
+/* Positioning of Title and Description */
+.card-title {
+  top: 30%; /* Position the title */
+  font-size: 1.5em;
+  color: #c86682; /* Accent color for titles */
+  font-family: "Bodoni MT", serif;
 }
 
-/* View Button Styling */
-.view-button {
-    background: linear-gradient(135deg, #d47b96, #c86682);
-    color: #FAF3E3;
-    font-family: "Georgia", serif;
-    font-size: 1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.card-description {
+  top: 50%; /* Position description below title */
+  font-size: 1em;
+  line-height: 1.6;
+  font-family: "Georgia", serif;
+  width: 90%;
 }
 
-.view-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+/* Hover Effect to reveal title and description */
+.card:hover .card-title,
+.card:hover .card-description {
+  opacity: 1; /* Make visible on hover */
 }
 
-.view-button:active {
-    transform: translateY(0);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+/* Hover Effects */
+.content::before {
+  opacity: 0;
+  transition: opacity 300ms;
+  content: " ";
+  display: block;
+  background: #FAF3E3;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  filter: blur(50px);
 }
 
-/* Responsive Modal Image */
-@media screen and (max-width: 700px) {
-    .modal-content {
-        width: 90%;
-    }
+.card:hover .content::before {
+  opacity: 0.6;
 }
 
-/* Return to Dashboard Button Styling */
-.return-dashboard {
-    text-align: center;
-    margin-top: 30px;
+.card::before {
+  opacity: 0;
+  content: " ";
+  position: absolute;
+  display: block;
+  width: 120px;
+  height: 360px;
+  background: linear-gradient(90deg, transparent, #c86682, #387ef0, transparent);
+  transition: opacity 300ms;
+  animation: rotation_9018 3000ms infinite linear;
+  animation-play-state: paused;
 }
 
-.dashboard-button {
-    background: linear-gradient(135deg, #d47b96, #c86682);
-    color: #FAF3E3;
-    font-family: "Georgia", serif;
-    font-size: 1em;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 8px;
-    text-decoration: none;
-    display: inline-block;
-    cursor: pointer;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
-    transition: transform 0.2s ease, box-shadow 0.2s ease;
+.card:hover::before {
+  opacity: 1;
+  animation-play-state: running;
 }
 
-.dashboard-button:hover {
-    transform: translateY(-3px);
-    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.3);
+.card::after {
+  position: absolute;
+  content: " ";
+  display: block;
+  width: 300px;
+  height: 450px;
+  background: #17171733;
+  backdrop-filter: blur(50px);
 }
 
-.dashboard-button:active {
-    transform: translateY(0);
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+/* Animation */
+@keyframes rotation_9018 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* Overall styling for the main portfolio page */
+.portfolio-title {
+  font-family: "Bodoni MT", serif;
+  font-size: 3em;
+  color: #c86682;
+  text-align: center;
+  margin-top: 120px;
+}
+
+.portfolio-subtitle {
+  text-align: center;
+  font-style: italic;
+  color: #FAF3E3;
+  font-size: 1.2em;
+  margin-bottom: 20px;
 }
