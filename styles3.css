@@ -13,6 +13,7 @@ body {
     height: 400vh;
     overflow-y: scroll;
     position: relative;
+    font-family: Georgia, serif;
     
 }
 
@@ -143,3 +144,111 @@ body {
 .star98 { width: 2.7px; height: 2.7px; top: 80%; left: 5%; animation-duration: 3s; }
 .star99 { width: 3px; height: 3px; top: 45%; left: 90%; animation-duration: 3.5s; }
 .star100 { width: 2.1px; height: 2.1px; top: 70%; left: 15%; animation-duration: 2.9s; }
+
+/* Navigation Bar */
+header {
+    background: transparent;
+    padding: 10px 20px;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar .logo {
+    height: 70px;
+    width: 110px;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.navbar ul li {
+    display: flex;
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #ffffffcc;
+    font-family: 'Georgia', serif;
+    font-size: 18px;
+    font-weight: bold;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    color: #c86682;
+    border-bottom: 2px solid #ffffffcc;
+}
+
+body {
+    font-family: Georgia, serif;
+    background-color: #212530;
+    color: #ffffffcc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+main {
+    margin-top: 120px;
+    width: 80%;
+    max-width: 800px;
+}
+
+section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #33394A;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    color: #FAF3E3;
+}
+
+h2 {
+    font-family: "Bodoni MT", serif;
+    font-size: 1.8em;
+    color: #c86682;
+    margin-bottom: 10px;
+}
+
+.mood-board-image {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.rationale {
+    font-style: italic;
+    color: #cccccc;
+    margin-top: 10px;
+}
+
+.digital-artwork-title {
+    font-family: "Bodoni MT", serif;
+    font-size: 3.5em;
+    color: #c86682;
+    text-align: center;
+    margin-top: 120px; /* Adjust for spacing under the navbar */
+}
+
+.digital-artwork-subtitle {
+    text-align: center;
+    font-style: italic;
+    color: #FAF3E3;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
